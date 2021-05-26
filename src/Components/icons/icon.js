@@ -4,7 +4,7 @@ import {
   IconGitHub,
   IconInstagram,
   IconLinkedin,
-} from 'Components/icons';
+} from 'Components/Icons';
 
 const Icon = ({ name }) => {
   console.log(name)

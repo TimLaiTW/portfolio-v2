@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import ThemeToggler from 'Styles/Themes/ThemeToggler';
-import LogoList from 'Content/LogoList';
 import { navLinks } from 'config';
 import styled from 'styled-components';
 import { debounce } from 'Utilities/debounce';
 import Button from 'Utilities/Button';
+
+import logo_light from 'Content/Images/logo_light.png';
+import logo_dark from 'Content/Images/logo_dark.png';
+
 const Navigation = (props) => {
-    const logo = props.theme === 'light' ? LogoList[0].img : LogoList[1].img;
+    const logo = props.theme === 'light' ? logo_light : logo_dark;
 
     // Hide Nav bar when scrolling 
     const [ prevScrollPos, setPrevScrollPos ] = useState(0);

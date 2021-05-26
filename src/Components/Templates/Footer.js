@@ -1,8 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import { socialMedia } from 'config';
-import { Icon } from 'Components/icons';
-import { email } from 'config';
 const Footer = () => {
     const FooterStyles = styled.section`
     $color-white: #FFFBFA;
@@ -12,7 +10,7 @@ const Footer = () => {
     .wrapper {
         position: fixed;
         bottom: 0px;
-        padding: 0 0 30px 30px;
+        padding: 0 0 30px 42px;
         transition: all .4s ease-out;
     
         &__links {
@@ -35,7 +33,7 @@ const Footer = () => {
         }
 
         & .social-svg {
-            width: 3.8rem;
+            width: 1.8rem;
             height: 2.8rem;
 
             & .social-group {

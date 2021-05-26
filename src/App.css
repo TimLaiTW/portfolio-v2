@@ -9,7 +9,8 @@
   --LightGreen: #A6F03E;
   --Blue: #106df8;
   --Navy: #3f739e;
-  --Light: #E9E9EB;
+  /* --Light: #E9E9EB; */
+  --Light: white;
 }
 
 .pages {
@@ -22,14 +23,6 @@ header {
   font-family: var(--font-primary);
   padding: 2% 5% 2% 0px;
   color: white;
-}
-
-header.dark {
-  color: var(--green);
-}
-
-header.light {
-  color: var(--peach);
 }
 
 .pages-content:not(:first-child) {
@@ -47,30 +40,6 @@ header.light {
 
 h1, h3, h5, p, li {
   font-family: var(--font-mainContent);
-}
-
-h1.light {
-  color: #e85a4f;
-}
-
-h1.dark {
-  color: #86c232;
-}
-
-h3.light, a.light:hover  {
-  color: #e98074;
-}
-
-h3.dark, a.dark:hover {
-  color: #61892f;
-}
-
-h5.light, p.light, li.light{
-  color: #383836;
-}
-
-h5.dark, p.dark, li.dark {
-  color: #d8dee3;
 }
 
 a {

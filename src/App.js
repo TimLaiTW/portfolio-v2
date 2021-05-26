@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles, useDarkMode, lightTheme, darkTheme} from "Styles/Themes";
 import { Navbar, Footer } from 'Components/Templates';
 
-import { Me, About, Work, Experience, Contact } from 'Pages';
+import { Me, About, Work, Experience, Contact } from 'Containers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'App.css';
 
