@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/profolio-v2/static/css/main.eb72c254.chunk.css",
+    "main.js": "/profolio-v2/static/js/main.b8f379c1.chunk.js",
+    "main.js.map": "/profolio-v2/static/js/main.b8f379c1.chunk.js.map",
+    "runtime-main.js": "/profolio-v2/static/js/runtime-main.ef9c6c42.js",
+    "runtime-main.js.map": "/profolio-v2/static/js/runtime-main.ef9c6c42.js.map",
+    "static/css/2.150d169a.chunk.css": "/profolio-v2/static/css/2.150d169a.chunk.css",
+    "static/js/2.3b7f1f78.chunk.js": "/profolio-v2/static/js/2.3b7f1f78.chunk.js",
+    "static/js/2.3b7f1f78.chunk.js.map": "/profolio-v2/static/js/2.3b7f1f78.chunk.js.map",
+    "static/js/3.335ab7db.chunk.js": "/profolio-v2/static/js/3.335ab7db.chunk.js",
+    "static/js/3.335ab7db.chunk.js.map": "/profolio-v2/static/js/3.335ab7db.chunk.js.map",
+    "index.html": "/profolio-v2/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/profolio-v2/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.eb72c254.chunk.css.map": "/profolio-v2/static/css/main.eb72c254.chunk.css.map",
+    "static/js/2.3b7f1f78.chunk.js.LICENSE.txt": "/profolio-v2/static/js/2.3b7f1f78.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef9c6c42.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.3b7f1f78.chunk.js",
+    "static/css/main.eb72c254.chunk.css",
+    "static/js/main.b8f379c1.chunk.js"
+  ]
+}
