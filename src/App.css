@@ -1,0 +1,82 @@
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Times New Roman', Times, serif;
+  --font-mainContent: 'Courier New', Courier, monospace;
+
+  --DarkShadow: #404040;
+  --Dark: #222629;
+  --Green: #86C232;
+  --LightGreen: #A6F03E;
+  --Blue: #106df8;
+  --Navy: #3f739e;
+  --Light: #E9E9EB;
+}
+
+.pages {
+  margin: 2% 20% 0 20%;
+}
+
+header {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: var(--font-primary);
+  padding: 2% 5% 2% 0px;
+  color: white;
+}
+
+header.dark {
+  color: var(--green);
+}
+
+header.light {
+  color: var(--peach);
+}
+
+.pages-content:not(:first-child) {
+  min-height: 600px;
+  /* padding-bottom: 300px; */
+}
+
+
+.anchor { 
+  position: relative;
+  margin-bottom: 50px;
+  display: block;
+  visibility: hidden;
+} 
+
+h1, h3, h5, p, li {
+  font-family: var(--font-mainContent);
+}
+
+h1.light {
+  color: #e85a4f;
+}
+
+h1.dark {
+  color: #86c232;
+}
+
+h3.light, a.light:hover  {
+  color: #e98074;
+}
+
+h3.dark, a.dark:hover {
+  color: #61892f;
+}
+
+h5.light, p.light, li.light{
+  color: #383836;
+}
+
+h5.dark, p.dark, li.dark {
+  color: #d8dee3;
+}
+
+a {
+  padding-right: 10px;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
