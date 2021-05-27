@@ -1,7 +1,8 @@
 import React from "react";
 import data from 'Content/PlaceList';
 import styled from 'styled-components';
-import List from 'Utilities/List';
+// import List from 'Utilities/List';
+import List from 'Utilities/TempList';
 const Experience = () => {
     const StyledExperSection = styled.section`    
 

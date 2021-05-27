@@ -4,7 +4,6 @@ import { navLinks } from 'config';
 import styled from 'styled-components';
 import { debounce } from 'Utilities/debounce';
 import Button from 'Utilities/Button';
-
 import logo_light from 'Content/Images/logo_light.png';
 import logo_dark from 'Content/Images/logo_dark.png';
 

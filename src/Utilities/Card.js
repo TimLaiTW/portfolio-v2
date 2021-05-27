@@ -8,7 +8,6 @@ const Card = (props) => {
         position: relative;
         overflow: hidden;
         border-radius: 0.5rem;
-        // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
         
         &__title {
             transition: color 1s ease;
@@ -121,7 +120,7 @@ return (
                     <a href={git_link} className="news-card__read-more" target="_blank" rel="noreferrer noopener">Github</a>
                 </div>
             </div>
-            <div className="news-news-card__post-date">{date}</div>
+            <div className="news-card__post-date">{date}</div>
             <div className="news-card__details-wrapper">
                 <p className="news-card__excerpt">{body}</p>    
             </div>
