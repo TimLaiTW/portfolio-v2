@@ -33,7 +33,7 @@ const Footer = () => {
         }
 
         & .social-svg {
-            width: 1.8rem;
+            width: 2.2rem;
             height: 2.8rem;
 
             & .social-group {

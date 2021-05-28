@@ -2,7 +2,7 @@ import React from "react";
 import data from 'Content/PlaceList';
 import styled from 'styled-components';
 // import List from 'Utilities/List';
-import List from 'Utilities/TempList';
+import List from 'Utilities/List';
 const Experience = () => {
     const StyledExperSection = styled.section`    
 

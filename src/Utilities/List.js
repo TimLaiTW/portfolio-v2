@@ -2,39 +2,99 @@ import React from 'react';
 import styled from 'styled-components';
 const List = (props) => {
     const StyledList = styled.section`
-        .list-title {
-            font-family: var(--font-primary);
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 0px;
-            transition: all .4s ease-in-out;
-            display: inline-block;
-            &:hover {
-                transform: scale(1.1)
+        .leaderboard {
+            
+            &__profiles {
+                background-color: transparent;
+                border-radius: 0 0 12px 12px;
+                padding: 15px 15px 10px;
+                display: grid;
+                row-gap: 8px;
+                width: 100%;
+                border-radius: 12px;
             }
-            &:hover + .list-descrp {
-                display: block;        
+            
+            &__profile {
+                display: grid;
+                grid-template-columns: 3fr 3fr;
+                align-items: center;
+                padding: 10px 30px 10px 10px;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+                cursor: pointer;
+                transition: transform .25s cubic-bezier(.7,.98,.86,.98), box-shadow .25s cubic-bezier(.7,.98,.86,.98);
+                background-color: transparent;
+                
+                &:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0 9px 47px 11px rgba(51, 51, 51, 0.18);
+                }
+
+                &:hover + .leaderboard__descrp {
+                    display: block;
+                    transition: all .2s ease-in-out;
+                }
+            }
+            
+            &__name {
+                color: #979cb0;
+                font-weight: 600;
+                font-size: 18px;
+                letter-spacing: 0.64px;
+                margin-left: 12px;
+            }
+            
+            &__value {
+                color: #35d8ac;
+                font-weight: 700;
+                font-size: 14px;
+                text-align: right;
+
+                & > a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover {
+                        transition: all 0.3s ease-out;
+                        color: ${({ theme }) => theme.header};
+                    }
+                }
+            
+                & > span {
+                    font-weight: 600;
+                    font-size: 13px;
+                    margin-left: 3px;
+                }
+            }
+
+            &__descrp {
+                display: none;
+                transition: all .2s ease-in-out;
             }
         }
-
-        .list-period {
-            margin-bottom: 10px;
-            font-size: 14px;
-            font-family: var(--font-mainContent);
-            top: 10px;
+      
+        // bare minimuu styles
+        
+        body {
+            margin: 0;
+            background-color: #eaeaea;
+            display: grid;
+            height: 100vh;
+            place-items: center;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .leaderboard {
+            box-shadow: 0 0 40px -10px rgba(0, 0, 0, .4);
         }
 
-        .list-descrp {
-            display: none;
-        }
+        ul {
+            padding: 30px;
 
-        a {
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-            &:hover {
-                transition: all 0.3s ease-out;
-                color: ${({ theme }) => theme.header};
+            li {
+                display: block;
+                width: 480px;
+                margin-top: 16px;
             }
         }
     `;
@@ -42,11 +102,17 @@ const List = (props) => {
     const { title, url, place, period, descrp } = props.list;
     return (
         <StyledList>
-            <p className="list-title">{title}<a href={url}> @{place}</a></p>
-            <p className="list-descrp">
-                <div className='list-period'>{period}</div>
-                {descrp}
-            </p>
+            
+            <div class="leaderboard__profiles">
+                <div class="leaderboard__profile">
+                    <span class="leaderboard__name">{title}</span>
+                    <span class="leaderboard__value"><a href={url}>{place}</a></span>
+                </div>
+                <ul class="leaderboard__descrp">
+                    <li key='1'>{period}</li>
+                    <li kry='2'>{descrp}</li>
+                </ul>
+            </div>
         </StyledList>
     )
 }
