@@ -2,26 +2,61 @@ import React from 'react';
 import styled from 'styled-components';
 const Button = (props) => {
     const StyledEmailLink = styled.div`
-        a {
-            font-family: var(--font-primary);
-            display: inline-block;
-            padding: 9px;
-            font-size: 14px;
-            border-radius: 4px;
-            transition: all .2s ease-in-out;
-            text-decoration: none;
-            color: ${({ theme }) => theme.Btn};
+    .button {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5rem 1.25rem;
+        border-radius: 5px;
+        color: ${({ theme }) => theme.Btn};
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        transition: all .5s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
             border: 1px solid ${({ theme }) => theme.Btn};
-            &:hover {
-                color: ${({ theme }) => theme.BtnHover};
-                border: 1px solid ${({ theme }) => theme.BtnHover};               
+            border-radius: 5px;
+            z-index: -2;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: ${({ theme }) => theme.Btn};
+            transition: all 0.5s;
+            border-radius: 5px;
+            z-index: -1;
+        }
+        &:hover {
+            color: #fff;
+            &:before {
+                width: 100%;
             }
         }
+    }
+    
+    
 
     `;
     return (
         <StyledEmailLink>
-            <a href={props.url} target="_blank" rel="noreferrer noopener">{props.children}</a>
+            <div class="box-1">
+                <div class="btn btn-one">
+                    <a className='button' hrerf={props.url}>{props.children}</a>
+                </div>
+            </div>
         </StyledEmailLink>
     )
 };

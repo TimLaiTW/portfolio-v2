@@ -7,9 +7,8 @@ const List = (props) => {
             &__profiles {
                 background-color: transparent;
                 border-radius: 0 0 12px 12px;
-                padding: 15px 15px 10px;
+                // padding: 15px 15px 10px;
                 display: grid;
-                row-gap: 8px;
                 width: 100%;
                 border-radius: 12px;
             }
@@ -32,8 +31,10 @@ const List = (props) => {
                 }
 
                 &:hover + .leaderboard__descrp {
-                    display: block;
-                    transition: all .2s ease-in-out;
+                    visibility: visible;
+                    opacity: 1;
+                    max-height: 1000px;
+                    padding: 30px;
                 }
             }
             
@@ -68,9 +69,14 @@ const List = (props) => {
             }
 
             &__descrp {
-                display: none;
-                transition: all .2s ease-in-out;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.8s linear;
+                max-height: 0px;
+                list-style-type: none;
             }
+
+            
         }
       
         // bare minimuu styles
@@ -87,16 +93,6 @@ const List = (props) => {
         .leaderboard {
             box-shadow: 0 0 40px -10px rgba(0, 0, 0, .4);
         }
-
-        ul {
-            padding: 30px;
-
-            li {
-                display: block;
-                width: 480px;
-                margin-top: 16px;
-            }
-        }
     `;
 
     const { title, url, place, period, descrp } = props.list;
@@ -109,8 +105,8 @@ const List = (props) => {
                     <span class="leaderboard__value"><a href={url}>{place}</a></span>
                 </div>
                 <ul class="leaderboard__descrp">
-                    <li key='1'>{period}</li>
-                    <li kry='2'>{descrp}</li>
+                    <li>{period}</li>
+                    <li>{descrp}</li>
                 </ul>
             </div>
         </StyledList>

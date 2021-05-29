@@ -20,7 +20,9 @@ const Contact = (props) => {
     }
 
     .email-btn {
-        margin-left: 90px;
+        left: 50%;
+        top: 50%;
+        transform: translate(15%, 0%);
     }
 
     .wave {

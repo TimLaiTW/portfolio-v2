@@ -3,7 +3,7 @@ import ThemeToggler from 'Styles/Themes/ThemeToggler';
 import { navLinks } from 'config';
 import styled from 'styled-components';
 import { debounce } from 'Utilities/debounce';
-import Button from 'Utilities/Button';
+import Button from 'Utilities/TempButton';
 import logo_light from 'Content/Images/logo_light.png';
 import logo_dark from 'Content/Images/logo_dark.png';
 
