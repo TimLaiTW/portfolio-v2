@@ -6,20 +6,19 @@ const List = (props) => {
             
             &__profiles {
                 background-color: transparent;
-                border-radius: 0 0 12px 12px;
-                // padding: 15px 15px 10px;
+                border-radius: 0 0 0.75rem 0.75rem;
                 display: grid;
                 width: 100%;
-                border-radius: 12px;
+                border-radius: 0.75rem;
             }
             
             &__profile {
                 display: grid;
                 grid-template-columns: 3fr 3fr;
                 align-items: center;
-                padding: 10px 30px 10px 10px;
+                padding: 0.75rem 1.875rem 0.75rem 0.75rem;
                 overflow: hidden;
-                border-radius: 10px;
+                border-radius: 0.75rem;
                 box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
                 cursor: pointer;
                 transition: transform .25s cubic-bezier(.7,.98,.86,.98), box-shadow .25s cubic-bezier(.7,.98,.86,.98);
@@ -33,38 +32,39 @@ const List = (props) => {
                 &:hover + .leaderboard__descrp {
                     visibility: visible;
                     opacity: 1;
-                    max-height: 1000px;
-                    padding: 30px;
+                    max-height: 62.5rem;
+                    padding: 1.875rem;
                 }
             }
             
             &__name {
-                color: #979cb0;
-                font-weight: 600;
-                font-size: 18px;
-                letter-spacing: 0.64px;
-                margin-left: 12px;
+                color: ${({ theme }) => theme.text};
+                font-weight: 400;
+                font-size: 1.125rem;
+                letter-spacing: .25rem;
+                margin-left: 0.75rem;
             }
             
             &__value {
                 color: #35d8ac;
                 font-weight: 700;
-                font-size: 14px;
+                font-size: 0.875rem;
                 text-align: right;
 
                 & > a {
                     text-decoration: none;
                     cursor: pointer;
+                    letter-spacing: .1rem;
                     &:hover {
                         transition: all 0.3s ease-out;
-                        color: ${({ theme }) => theme.header};
+                        color: ${({ theme }) => theme.Btn};
                     }
                 }
             
                 & > span {
                     font-weight: 600;
-                    font-size: 13px;
-                    margin-left: 3px;
+                    font-size: 0.875rem;
+                    margin-left: 0.2rem;
                 }
             }
 
@@ -72,7 +72,7 @@ const List = (props) => {
                 visibility: hidden;
                 opacity: 0;
                 transition: visibility 0s, opacity 0.8s linear;
-                max-height: 0px;
+                max-height: 0;
                 list-style-type: none;
             }
 
@@ -91,7 +91,7 @@ const List = (props) => {
         }
         
         .leaderboard {
-            box-shadow: 0 0 40px -10px rgba(0, 0, 0, .4);
+            box-shadow: 0 0 40px -0.75rem rgba(0, 0, 0, .4);
         }
     `;
 

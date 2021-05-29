@@ -6,7 +6,7 @@ const Button = (props) => {
         text-decoration: none;
         display: inline-block;
         padding: 0.5rem 1.25rem;
-        border-radius: 5px;
+        border-radius: .3rem;
         color: ${({ theme }) => theme.Btn};
         text-transform: uppercase;
         font-size: 1rem;
@@ -23,8 +23,8 @@ const Button = (props) => {
             width: 100%;
             height: 100%;
             background-color: transparent;
-            border: 1px solid ${({ theme }) => theme.Btn};
-            border-radius: 5px;
+            border: 0.08rem solid ${({ theme }) => theme.Btn};
+            border-radius: 0.3rem;
             z-index: -2;
         }
         &:before {
@@ -36,7 +36,7 @@ const Button = (props) => {
             height: 100%;
             background-color: ${({ theme }) => theme.Btn};
             transition: all 0.5s;
-            border-radius: 5px;
+            border-radius: 0.3rem;
             z-index: -1;
         }
         &:hover {
@@ -52,11 +52,7 @@ const Button = (props) => {
     `;
     return (
         <StyledEmailLink>
-            <div class="box-1">
-                <div class="btn btn-one">
-                    <a className='button' hrerf={props.url}>{props.children}</a>
-                </div>
-            </div>
+            <a className='button' hrerf={props.url}>{props.children}</a>
         </StyledEmailLink>
     )
 };

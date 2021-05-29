@@ -7,16 +7,14 @@ const Contact = (props) => {
     const StyledContactSection = styled.section`
     header {
         display: flex;
-        height: 10vh;
         align-items: center;
         justify-content: center;
-        font-size: 3rem;
     }
 
     .contact-content {
         margin-left: auto;
         margin-right: auto;
-        width: 20em;
+        width: 20rem;
     }
 
     .email-btn {

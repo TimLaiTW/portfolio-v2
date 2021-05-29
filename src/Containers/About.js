@@ -4,25 +4,26 @@ const About = () => {
     const StyledAboutSection = styled.section`
         span {
             color: ${({ theme }) => theme.header};
-            font-family: var(--font-primary);
+            font-family: var(--font-mainContent);
+            font-weight: 900;
         }
 
         ul.skills-list {
             display: grid;
-            grid-template-columns: repeat(2, minmax(140px, 200px));
+            grid-template-columns: repeat(2, minmax(8.75rem, 12.5rem));
             padding: 0;
-            margin: 10px 0 0 0;
+            margin: 0.625rem 0 0 0;
             overflow: hidden;
             list-style: none;
             li {
                 position: relative;
-                margin-bottom: 10px;
-                padding-left: 20px;
+                margin-bottom: 0.625rem;
+                padding-left: 1.25rem;
                 &:before {
                     content: '▹';
                     position: relative;
-                    right: 10px;
-                    line-height: 12px;
+                    right: 0.625rem;
+                    line-height: 0.75rem;
                     }
             }
 

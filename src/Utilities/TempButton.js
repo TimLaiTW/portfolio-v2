@@ -5,9 +5,9 @@ const Button = (props) => {
         a {
             font-family: var(--font-primary);
             display: inline-block;
-            padding: 9px;
-            font-size: 14px;
-            border-radius: 4px;
+            padding: 0.6rem;
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
             transition: all .2s ease-in-out;
             text-decoration: none;
             color: ${({ theme }) => theme.Btn};

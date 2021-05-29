@@ -5,9 +5,10 @@ import { email } from 'config';
 const Me = () => {
     const StyledHeroSection = styled.section`
         * {
-            max-width: 650px;
+            max-width: 40.625rem;
             p {
-                max-width: 350px;
+                max-width: 21.875rem;
+                font-weight: normal;
             }
             h1 {
                 color: ${({ theme }) => theme.header};

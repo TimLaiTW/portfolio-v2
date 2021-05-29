@@ -9,7 +9,6 @@
   --LightGreen: #A6F03E;
   --Blue: #106df8;
   --Navy: #3f739e;
-  /* --Light: #E9E9EB; */
   --Light: white;
 }
 
@@ -19,21 +18,20 @@
 
 header {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2rem;
   font-family: var(--font-primary);
-  padding: 2% 5% 2% 0px;
+  padding: 2% 5% 2% 0;
   color: white;
 }
 
 .pages-content:not(:first-child) {
-  min-height: 600px;
-  /* padding-bottom: 300px; */
+  min-height: 37.5rem;
 }
 
 
 .anchor { 
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   display: block;
   visibility: hidden;
 } 
@@ -43,7 +41,7 @@ h1, h3, h5, p, li {
 }
 
 a {
-  padding-right: 10px;
+  padding-right: 0.625rem;
   color: inherit;
   outline: none;
   text-decoration: none;

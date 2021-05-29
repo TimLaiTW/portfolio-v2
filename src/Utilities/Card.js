@@ -24,7 +24,7 @@ const Card = (props) => {
             color: #bbb;
             padding: 0.4rem 0.6rem;
             border-radius: 0.3rem;
-            border: 1px solid #444;
+            border: 0.08rem solid #444;
             font-size: 0.8rem;
             text-decoration: none;
             width: 7rem;
@@ -93,10 +93,7 @@ const Card = (props) => {
             &__title {
                 color: yellow;
             }
-            &__post-date {
-                color: var(--Light);
-            }
-            &__excerpt {
+            &__post-date, &__excerpt {
                 color: var(--Light);
             }
             &__image {

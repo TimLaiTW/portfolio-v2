@@ -9,8 +9,8 @@ const Footer = () => {
 
     .wrapper {
         position: fixed;
-        bottom: 0px;
-        padding: 0 0 30px 42px;
+        bottom: 0;
+        padding: 0 0 1.875rem 2.625rem;
         transition: all .4s ease-out;
     
         &__links {

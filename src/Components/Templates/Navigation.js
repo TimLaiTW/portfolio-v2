@@ -34,7 +34,7 @@ const Navigation = (props) => {
 
         .navItem{
             float: right;
-            margin-top: 8px; 
+            margin-top: 0.5rem; 
             li{
                 color: ${({ theme }) => theme.Btn};
                 & :hover{
@@ -42,8 +42,8 @@ const Navigation = (props) => {
                 }
                 font-family: var(--font-primary);
                 display: inline-block;
-                padding: 8px;
-                font-size: 14px;
+                padding: 0.5rem;
+                font-size: 0.875rem;
                 -webkit-transition: all .2s ease-in-out;
                 transition: all .2s ease-in-out;
                 a {
@@ -58,16 +58,16 @@ const Navigation = (props) => {
 
     const navbarStyles = {
         position: 'fixed',
-        height: '70px',
+        height: '4.375rem',
         width: '100%',
         transition: 'top 0.3s',
-        padding: '0 30px 0 30px',
+        padding: '0 1.875rem 0 1.875rem',
         overflow: 'hidden',
         zIndex: '99'
     }
     return (
         <div style={{ ...navbarStyles, 
-            top: visible ? '0' : '-70px', 
+            top: visible ? '0' : '-4.375rem', 
             background: props.theme === 'light' ? 'var(--Light)' : 'var(--Dark)'}}>
             <StyledNavItem>
                 <a className='logo' href='#hero'>
