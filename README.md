@@ -1,4 +1,4 @@
-# 🙎‍♂️ Second iteration of my protfolio
+# 🙎‍♂️ [Second iteration of my protfolio](https://timlaitw.github.io/profolio-v2/)
 
 Different from [First iteration of protfolio](https://github.com/TimLaiTW/TimLaiTW.github.io), this version is more software developer protfolio with some cool new features and CSS animations. 
 
