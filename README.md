@@ -1,6 +1,6 @@
 # 🙎‍♂️ Second iteration of my protfolio
 
-Diffenrt from [First iteration of protfolio](https://github.com/TimLaiTW/TimLaiTW.github.io), this version is more software developer protfolio with some cool new features and CSS animations. 
+Different from [First iteration of protfolio](https://github.com/TimLaiTW/TimLaiTW.github.io), this version is more software developer protfolio with some cool new features and CSS animations. 
 
 ![image](https://github.com/TimLaiTW/profolio-v2/blob/master/public/img/profolio.png)
 
