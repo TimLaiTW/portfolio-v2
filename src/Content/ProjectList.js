@@ -7,7 +7,7 @@ const ProjectList = [
         img: checklist_img,
         date: 'Jul, 2021',
         body: 
-        "This beautiful checklist helps to manage your tasks based on different master list",
+        "Simple and must-have side project built through React. Easiest way to get all those tasks out of head and onto this check list. This beautiful checklist helps to manage your tasks based on different category you defined.",
         app_link: 'https://timlaitw.github.io/React-Checklist/',
         git_link: 'https://github.com/TimLaiTW/React-Checklist'
     },
@@ -16,7 +16,7 @@ const ProjectList = [
         img: profolio_img,
         date: 'May, 2021',
         body: 
-        "Second iteration of my personal website built with React and hosted on GitHub Pages.",
+        "Second iteration of my personal website built with React and hosted on GitHub Pages. What's new? It is a single page application with Light/Dark Mode, more CSS animation on buttons and image.",
         app_link: '#',
         git_link: '#'
     },
