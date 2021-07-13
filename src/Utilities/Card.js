@@ -18,6 +18,9 @@ const Card = (props) => {
             font-weight: bold;
         }
 
+        &_header {
+            display: block;
+        }
         &_header-link {
             float: right;
         }
@@ -40,14 +43,18 @@ const Card = (props) => {
         }
         
         &__post-date {
+            position: absolute;
             font-size: .7rem;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
             margin-bottom: .5rem;
             transition: color 1s ease;
             color: transparent;
         }
         
         &__details-wrapper {
+            display: flex;
+            margin-top: 4rem;
+            margin-bottom: .5rem;
             max-height: 0;
             opacity: 0;
             transition: max-height 1.5s ease, opacity 1s ease;
@@ -92,7 +99,7 @@ const Card = (props) => {
 
         &:hover .news-card{
             &__details-wrapper {
-                max-height: 3rem;
+                max-height: 8rem;
                 opacity: 1;
             }
             &__text-wrapper {
@@ -103,13 +110,17 @@ const Card = (props) => {
             }
             &__read-more {
                 border: 1px solid white;
-                color: yellow;
+                color: white;
+                &:hover {
+                    border: 1px solid yellow;
+                    color: yellow;
+                }
             }
             &__post-date, &__excerpt {
                 color: var(--Light);
             }
             &__image {
-                opacity: 0.1;
+                opacity: 0.2;
                 transform: scale(1.2);
                 z-index: -1;
             }
@@ -126,7 +137,7 @@ return (
                 <div className='news-card_header'>
                     <div className="news-card__title">{title}</div>
                     <div className='news-card_header-link'>
-                        <a href={app_link} className="news-card__read-more" target="_blank" rel="noreferrer noopener">Check it out</a>
+                        <a href={app_link} className="news-card__read-more" target="_blank" rel="noreferrer noopener">Link</a>
                         <a href={git_link} className="news-card__read-more" target="_blank" rel="noreferrer noopener">Github</a>
                     </div>
                 </div>
