@@ -23,7 +23,7 @@ const Button = (props) => {
             width: 100%;
             height: 100%;
             background-color: transparent;
-            border: 0.08rem solid ${({ theme }) => theme.Btn};
+            border: 0.1rem solid ${({ theme }) => theme.Btn};
             border-radius: 0.3rem;
             z-index: -2;
         }

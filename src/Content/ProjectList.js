@@ -1,6 +1,16 @@
 import profolio_img from 'Content/Images/profolio.png';
 import tipstip_img from 'Content/Images/tipstip.png';
+import checklist_img from 'Content/Images/checklist.png';
 const ProjectList = [
+    {
+        title: 'CheckList',
+        img: checklist_img,
+        date: 'Jul, 2021',
+        body: 
+        "This beautiful checklist helps to manage your tasks based on different master list",
+        app_link: 'https://timlaitw.github.io/React-Checklist/',
+        git_link: 'https://github.com/TimLaiTW/React-Checklist'
+    },
     {
         title: 'Profolio',
         img: profolio_img,
