@@ -1,8 +1,8 @@
 {
-  "name": "profolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://TimLaiTW/profolio-v2",
+  "homepage": "http://TimLaiTW/portfolio-v2",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
