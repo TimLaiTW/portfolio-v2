@@ -3,8 +3,7 @@ import { func, string } from 'prop-types';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
 import styled from 'styled-components';
-const ThemeToggler = ({theme,  toggleTheme }) => {  
-  const StyledIcon = styled.div`
+const StyledIcon = styled.div`
   .styledLogo {
     animation-name: styledLogo-animation;
     animation-duration: 1s;
@@ -25,6 +24,7 @@ const ThemeToggler = ({theme,  toggleTheme }) => {
   }
   
   `;
+  const ThemeToggler = ({theme,  toggleTheme }) => {  
   return (
     <StyledIcon>  
         {theme === 'light' ? 

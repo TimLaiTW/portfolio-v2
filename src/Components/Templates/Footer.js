@@ -1,8 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import { socialMedia } from 'config';
-const Footer = () => {
-    const FooterStyles = styled.section`
+const FooterStyles = styled.section`
     $color-white: #FFFBFA;
 
     $color-black: #191308;
@@ -87,11 +86,12 @@ const Footer = () => {
     }
 
 `;
-const SocialMedia = socialMedia.map((social) => social);
-    return (
-        <FooterStyles>
-            <div className="wrapper">
-            <div className="wrapper__links">
+const Footer = () => {
+    const SocialMedia = socialMedia.map((social) => social);
+        return (
+            <FooterStyles>
+                <div className="wrapper">
+                <div className="wrapper__links">
                 <a className="social-link social-link--github" id="github" href={SocialMedia[0].url} target="_blank" rel="noreferrer noopener">
                     <svg className="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                     <title>

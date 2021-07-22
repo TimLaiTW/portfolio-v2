@@ -3,8 +3,7 @@ import data from 'Content/ProjectList';
 import styled from 'styled-components';
 
 import Card from 'Utilities/Card';
-const Work = () => {
-    const StyledWordSection = styled.section`        
+const StyledWordSection = styled.section`        
         .content-wrapper {
             margin: 0 auto;
             max-width: auto;
@@ -12,7 +11,7 @@ const Work = () => {
             justify-content: center;
         }
     `;
-
+const Work = () => {    
     return (
         <StyledWordSection>
 

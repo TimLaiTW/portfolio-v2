@@ -2,9 +2,7 @@ import React from "react";
 import Button from 'Utilities/Button';
 import styled from 'styled-components';
 import { email } from 'config';
-const Contact = (props) => {
-    const theme = props.theme;
-    const StyledContactSection = styled.section`
+const StyledContactSection = styled.section`
     header {
         display: flex;
         align-items: center;
@@ -42,7 +40,8 @@ const Contact = (props) => {
         100% { transform: rotate( 0.0deg) }
       }
     `;
-
+const Contact = (props) => {
+    const theme = props.theme;
     const EmailUrl = "mailto:" + email;
     return (
         <StyledContactSection>
@@ -57,7 +56,7 @@ const Contact = (props) => {
                     <p>Feel free to shoot me an email.</p>
                     <div className='email-btn'>
                         <Button url={EmailUrl} theme={theme}>
-                            Say Hello <span class="wave">👋</span>
+                            Say Hello <span className="wave">👋</span>
                         </Button>
                     </div>
                 </div>

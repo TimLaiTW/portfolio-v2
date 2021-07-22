@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-const Card = (props) => {
-    const StyledCardSection = styled.section`
+const StyledCardSection = styled.section`
     .news-card {
         max-height: 20rem;
         margin-top: 1.5rem;
@@ -127,6 +126,7 @@ const Card = (props) => {
         }   
     }
     `;
+const Card = (props) => {
     const { title, date, body, img, app_link, git_link } = props.project;
 return (
     <StyledCardSection>

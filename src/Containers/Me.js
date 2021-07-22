@@ -2,8 +2,7 @@ import React from "react";
 import Button from 'Utilities/Button';
 import styled from 'styled-components';
 import { email } from 'config';
-const Me = () => {
-    const StyledHeroSection = styled.section`
+const StyledHeroSection = styled.section`
         * {
             max-width: 40.625rem;
             p {
@@ -15,6 +14,8 @@ const Me = () => {
             }
         }
     `;
+const Me = () => {
+    
     const EmailUrl = "mailto:" + email;
     return (
         <StyledHeroSection>

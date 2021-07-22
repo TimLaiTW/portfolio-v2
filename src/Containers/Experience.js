@@ -3,11 +3,10 @@ import data from 'Content/PlaceList';
 import styled from 'styled-components';
 // import List from 'Utilities/List';
 import List from 'Utilities/List';
-const Experience = () => {
-    const StyledExperSection = styled.section`    
-
-          
+const StyledExperSection = styled.section`        
     `;
+const Experience = () => {
+    
     return (
         <StyledExperSection>
            

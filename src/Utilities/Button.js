@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-const Button = (props) => {
-    const StyledEmailLink = styled.div`
+const StyledEmailLink = styled.div`
     .button {
         text-decoration: none;
         display: inline-block;
@@ -46,13 +45,11 @@ const Button = (props) => {
             }
         }
     }
-    
-    
-
     `;
+    const Button = (props) => {
     return (
         <StyledEmailLink>
-            <a className='button' hrerf={props.url}>{props.children}</a>
+            <a className='button' href={props.url}>{props.children}</a>
         </StyledEmailLink>
     )
 };

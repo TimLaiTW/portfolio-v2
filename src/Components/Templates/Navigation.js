@@ -6,28 +6,8 @@ import { debounce } from 'Utilities/debounce';
 import Button from 'Utilities/TempButton';
 import logo_light from 'Content/Images/logo_light.png';
 import logo_dark from 'Content/Images/logo_dark.png';
-
-const Navigation = (props) => {
-    const logo = props.theme === 'light' ? logo_light : logo_dark;
-
-    // Hide Nav bar when scrolling 
-    const [ prevScrollPos, setPrevScrollPos ] = useState(0);
-    const [ visible, setVisible] = useState(true);
-    const handleScroll = debounce(() => {
-        // find current scroll position
-        const currentScrollPos = window.pageYOffset;
-        // set state based on location info
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0) || currentScrollPos < 10);
-        //set state to new scroll position
-        setPrevScrollPos(currentScrollPos);
-    }, 50);
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollPos, visible, handleScroll]);
-
-    const StyledNavItem = styled.div`
+import resume from 'resume.pdf';
+const StyledNavItem = styled.div`
         .logo {
             float: left;
         }
@@ -56,6 +36,27 @@ const Navigation = (props) => {
         }
     `;
 
+const Navigation = (props) => {
+    const logo = props.theme === 'light' ? logo_light : logo_dark;
+
+    // Hide Nav bar when scrolling 
+    const [ prevScrollPos, setPrevScrollPos ] = useState(0);
+    const [ visible, setVisible] = useState(true);
+    const handleScroll = debounce(() => {
+        // find current scroll position
+        const currentScrollPos = window.pageYOffset;
+        // set state based on location info
+        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0) || currentScrollPos < 10);
+        //set state to new scroll position
+        setPrevScrollPos(currentScrollPos);
+    }, 50);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible, handleScroll]);
+
+    
     const navbarStyles = {
         position: 'fixed',
         height: '4.375rem',
@@ -85,7 +86,7 @@ const Navigation = (props) => {
                         </li>
                     ))}
                     <li>
-                        <Button url='/resume.pdf'>Resume</Button>
+                        <Button url={resume}>Resume</Button>
                     </li>
                     <li>
                         <ThemeToggler theme={props.theme} toggleTheme={props.toggleTheme}/>

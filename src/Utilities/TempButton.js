@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-const Button = (props) => {
-    const StyledBtnLink = styled.div`
+const StyledBtnLink = styled.div`
         a {
             font-family: var(--font-primary);
             display: inline-block;
@@ -19,6 +18,7 @@ const Button = (props) => {
         }
 
     `;
+const Button = (props) => {
     return (
         <StyledBtnLink>
             <a href={props.url} target="_blank" rel="noreferrer noopener">{props.children}</a>

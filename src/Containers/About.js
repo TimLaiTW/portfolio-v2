@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-const About = () => {
-    const StyledAboutSection = styled.section`
+const StyledAboutSection = styled.section`
         span {
             color: ${({ theme }) => theme.header};
             font-family: var(--font-mainContent);
@@ -32,6 +31,7 @@ const About = () => {
             }
         }
     `;
+const About = () => {
 
     const skills = ['JavaScript (ES6+)', 'React', 'Angular', 'Node.js', 'Python'];
     return (

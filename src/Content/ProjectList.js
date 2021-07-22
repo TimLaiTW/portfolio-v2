@@ -12,7 +12,7 @@ const ProjectList = [
         git_link: 'https://github.com/TimLaiTW/React-Checklist'
     },
     {
-        title: 'Profolio',
+        title: 'Portfolio',
         img: profolio_img,
         date: 'May, 2021',
         body: 

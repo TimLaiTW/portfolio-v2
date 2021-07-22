@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-const List = (props) => {
-    const StyledList = styled.section`
+const StyledList = styled.section`
         .leaderboard {
             
             &__profiles {
@@ -94,17 +93,17 @@ const List = (props) => {
             box-shadow: 0 0 40px -0.75rem rgba(0, 0, 0, .4);
         }
     `;
-
+const List = (props) => {
     const { title, url, place, period, descrp } = props.list;
     return (
         <StyledList>
             
-            <div class="leaderboard__profiles">
-                <div class="leaderboard__profile">
-                    <span class="leaderboard__name">{title}</span>
-                    <span class="leaderboard__value"><a href={url}>{place}</a></span>
+            <div className="leaderboard__profiles">
+                <div className="leaderboard__profile">
+                    <span className="leaderboard__name">{title}</span>
+                    <span className="leaderboard__value"><a href={url}>{place}</a></span>
                 </div>
-                <ul class="leaderboard__descrp">
+                <ul className="leaderboard__descrp">
                     <li>{period}</li>
                     <li>{descrp}</li>
                 </ul>
