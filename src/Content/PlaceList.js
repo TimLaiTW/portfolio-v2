@@ -2,7 +2,7 @@ const PlaceList = [
     {
         title: 'Co-founder & Website Engineer',
         place: 'Mustard Seed Capital LLC',
-        period: 'March - December 2020',
+        period: 'March - March 2021',
         descrp: 'Built the corporate website with web frameworks implemented. Completed development process and launched internally.',
         url: null
     },
