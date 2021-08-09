@@ -137,7 +137,9 @@ return (
                 <div className='news-card_header'>
                     <div className="news-card__title">{title}</div>
                     <div className='news-card_header-link'>
-                        <a href={app_link} className="news-card__read-more" target="_blank" rel="noreferrer noopener">Link</a>
+                        {typeof app_link !== 'undefined' && 
+                            <a href={app_link} className="news-card__read-more" target="_blank" rel="noreferrer noopener">Link</a>
+                        }
                         <a href={git_link} className="news-card__read-more" target="_blank" rel="noreferrer noopener">Github</a>
                     </div>
                 </div>

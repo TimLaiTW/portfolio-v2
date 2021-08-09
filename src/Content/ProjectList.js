@@ -1,7 +1,17 @@
 import profolio_img from 'Content/Images/profolio.png';
 import tipstip_img from 'Content/Images/tipstip.png';
 import checklist_img from 'Content/Images/checklist.png';
+import callunch_img from 'Content/Images/callunch.png';
 const ProjectList = [
+    {
+        title: 'Callunch',
+        img: callunch_img,
+        date: 'Aug, 2021',
+        body: 
+        "A combination of React.js and DJango. This app easily manages users' meal by adding, complete and delete the current order.",
+        
+        git_link: 'https://github.com/TimLaiTW/Callunch'
+    },
     {
         title: 'CheckList',
         img: checklist_img,
@@ -18,7 +28,7 @@ const ProjectList = [
         body: 
         "Second iteration of my personal website built with React and hosted on GitHub Pages. What's new? It is a single page application with Light/Dark Mode, more CSS animation on buttons and image.",
         app_link: '#',
-        git_link: '#'
+        git_link: 'https://github.com/TimLaiTW/portfolio-v2'
     },
     {
         title: 'Tips tip',
